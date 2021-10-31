@@ -1,26 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Dosis", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+header,
+footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+.animalsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 2rem;
 }
 
 .card {
-  background-color: antiquewhite;
-  box-shadow: 0 0 5px #eee;
-  height: 200px;
-  width: 100px;
+  background-color: snow;
+  box-shadow: 0 0 5px rgb(121, 121, 121);
+  width: 200px;
+  border-radius: 5px;
   display: inline-block;
   margin: 1rem;
+  text-transform: capitalize;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+.card:hover {
+  background-color: snow;
+  box-shadow: 0 0 20px rgb(121, 121, 121);
+  border-radius: 5px;
+  display: inline-block;
+  margin: 1rem;
+  text-transform: capitalize;
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+.card h2 {
+  padding: 1rem;
 }
 
 .card img {
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
