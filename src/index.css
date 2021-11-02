@@ -14,7 +14,8 @@ body {
 }
 
 header,
-footer {
+footer,
+main {
   padding: 2rem;
   text-align: center;
 }
@@ -52,4 +53,17 @@ footer {
   width: 100%;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 1rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  box-shadow: 0 0 5px #333;
+  background-color: darkcyan;
+  margin: 2rem;
 }
