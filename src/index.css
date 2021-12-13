@@ -28,6 +28,7 @@ main {
   text-align: center;
   padding-top: 125px;
   color: #333;
+  margin-bottom: 180px;
 }
 
 footer {
@@ -115,6 +116,7 @@ button {
 }
 .single-page img {
   width: 400px;
+  margin-bottom: 30px;
 }
 
 .heading {
@@ -126,11 +128,11 @@ input[type="text"] {
   height: 25px;
 }
 
-.svg-inline--fa {
+.search .svg-inline--fa {
   height: 25px;
 }
 
-.svg-inline--fa.fa-w-16 {
+.search .svg-inline--fa.fa-w-16 {
   width: 3em;
 }
 
@@ -139,4 +141,30 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.heading .svg-inline--fa.fa-w-20 {
+  width: 65px;
+  height: 65px;
+  color: #333;
+  padding-right: 15px;
+}
+.heading .svg-inline--fa.fa-w-20:hover,
+.heading .svg-inline--fa.fa-w-16:hover,
+.heading .svg-inline--fa.fa-w-18:hover {
+  color: #6c926f;
+}
+
+.heading .svg-inline--fa.fa-w-16 {
+  height: 55px;
+  width: 55px;
+  color: #333;
+  padding-right: 15px;
+}
+
+.heading .svg-inline--fa.fa-w-18 {
+  width: 65px;
+  height: 65px;
+  color: #333;
+  padding-right: 15px;
 }
