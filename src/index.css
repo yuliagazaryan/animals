@@ -45,13 +45,14 @@ footer {
 .card {
   background-color: snow;
   box-shadow: 0 0 5px rgb(121, 121, 121);
-  width: 200px;
+  width: 250px;
   border-radius: 5px;
   display: inline-block;
   margin: 1rem;
   text-transform: capitalize;
   filter: grayscale(100%);
   transition: all 0.5s;
+  padding-bottom: 15px;
 }
 
 .card:hover {
@@ -61,7 +62,18 @@ footer {
 }
 
 .card h2 {
-  padding: 1rem;
+  margin: 15px 0 15px 0;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.card a:hover {
+  text-decoration: underline;
+  color: #6c926f;
+  font-weight: bold;
 }
 
 .card img {
@@ -103,4 +115,28 @@ button {
 }
 .single-page img {
   width: 400px;
+}
+
+.heading {
+  margin-top: 150px;
+}
+
+input[type="text"] {
+  width: 225px;
+  height: 25px;
+}
+
+.svg-inline--fa {
+  height: 25px;
+}
+
+.svg-inline--fa.fa-w-16 {
+  width: 3em;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }

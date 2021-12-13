@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import { animals } from "./animals";
 import AnimalsCard from "./AnimalsCard";
-
-import { Switch, Route, useRouteMatch } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { Switch, Route } from "react-router-dom";
 import AnimalSingle from "./AnimalSingle";
+
+
 
 class AnimalsList extends Component {
   state ={
@@ -32,11 +35,17 @@ class AnimalsList extends Component {
         <AnimalsCard key={item.name} name={item.name} />
       ));
 
+    
+
   return (
+    <div>
+      <div className="search">
+      <FontAwesomeIcon icon={faSearch} />
+            <input type="text" onChange={this.searchInputHandler}/>
+</div>
     <div className="animalsList">
       <Switch>
         <Route exact path={this.props.match.path}>
-          <input type="text" onChange={this.searchInputHandler}/>
           {animalslisting}
         </Route>
         <Route path={`${this.props.match.path}/:animal`}>
@@ -44,7 +53,9 @@ class AnimalsList extends Component {
         </Route>
       </Switch>
     </div>
+    </div>
   );
 };
 }
+
 export default AnimalsList;
